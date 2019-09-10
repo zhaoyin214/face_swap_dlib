@@ -1,0 +1,23 @@
+import cv2
+
+IMAGE_HEIGHT_DIM = 0
+IMAGE_WIDTH_DIM = 1
+IMAGE_CHANNEL_DIM = 2
+
+# delaunay triangulation
+TRIANGULATION_COLUMES = ["VERT1", "VERT2", "VERT3"]
+
+CLONE_MODE = {
+    "normal": cv2.NORMAL_CLONE,
+    "mixed": cv2.MIXED_CLONE,
+    "monochrome": cv2.MONOCHROME_TRANSFER,
+}
+
+
+CV_RECT_XMIN = 0
+CV_RECT_YMIN = 1
+CV_RECT_WIDTH = 2
+CV_RECT_HEIGHT = 3
+
+MASK_VALID_FLOAT = (1, 1, 1)
+MASK_VALID_UBYTE = (255, 255, 255)
